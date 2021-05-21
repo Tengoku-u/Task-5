@@ -20,7 +20,6 @@ convertFahrToCelsius(9);
 
 function yuGiOhReplacer(num) {
     let yuGiOh = [];
-    let str = JSON.stringify(num);
     if (typeof num === "number") {
 
         for (let i =1; i<=num; i++) {
@@ -42,7 +41,7 @@ function yuGiOhReplacer(num) {
     } 
      
     if (typeof num !== "number") {
-        console.log("invalid parameter: " + str);
+        console.log("invalid parameter: " + num);
     }
     console.log(yuGiOh);
     return yuGiOh;
